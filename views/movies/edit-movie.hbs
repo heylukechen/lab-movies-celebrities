@@ -1,3 +1,4 @@
+<a href="/movies/{{foundMovie._id}}/"><h6>Leave edit mode</h6></a>
 <h2>Edit the movie</h2>
 <form action="/movies/{{foundMovie._id}}/edit" method="post">
   <label>Title: </label>
@@ -14,5 +15,5 @@
       <option value="{{this._id}}">{{this.name}}</option>
     {{/each}}
   </select>
-  <button type="submit">Save</button>
+  <button class="btn btn-primary" type="submit">Save</button>
 </form>

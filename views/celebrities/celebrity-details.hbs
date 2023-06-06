@@ -1,11 +1,11 @@
+<a href="/celebrities"><h6>Back to celebrities</h6></a>
 <h1>Name</h1>
 <h1>{{foundCelebrity.name}}</h1>
 <h4>Occupation</h4>
 <h4>{{foundCelebrity.occupation}}</h4>
 <h4>Catch phrase</h4>
 <h4>{{foundCelebrity.catchPhrase}}</h4>
-
-<a href="/celebrities/{{foundCelebrity._id}}/edit">Edit this celebrity</a>
-
+<a href="/celebrities/{{foundCelebrity._id}}/edit">
+  <button class="btn btn-secondary">Edit this celebrity</button></a>
 <form action="/celebrities/{{foundCelebrity._id}}/delete" method="post">
-  <button>Delete this celebrity</button></form>
+  <button class="btn btn-danger">Delete this celebrity</button></form>
